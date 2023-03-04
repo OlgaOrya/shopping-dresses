@@ -32,12 +32,8 @@ function App() {
 </div>
 
     <div className='container'>
-      <div className=''>
         <Categories />
-        </div>
-        <div className='app'>
         <Dresses />
-        </div>
       </div>
       </div>
   );

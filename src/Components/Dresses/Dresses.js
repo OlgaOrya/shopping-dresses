@@ -9,6 +9,7 @@ const Dresses = () =>{
         <div>
         {dataDresses
         .filter(dress =>{
+            if (selectedCategory==='ALL') return true;
         return selectedCategory===dress.category;
         })
         .map(dress => <Dress dress = {dress} />)}
