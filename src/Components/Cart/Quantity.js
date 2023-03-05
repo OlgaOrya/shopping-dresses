@@ -1,6 +1,5 @@
 
 const Quantity=({quantity,setQuantity})=>{
-
             
     const addItem = ()=>{
         const newQuantity = quantity + 1;
@@ -15,9 +14,9 @@ const Quantity=({quantity,setQuantity})=>{
 
     return(
         <div>
-            <button onClick={addItem}> + </button> 
+            <button className="button" onClick={addItem}> + </button> 
             <span> {quantity} </span>
-            <button onClick={removeItem}> - </button>
+            <button className="button" onClick={removeItem}> - </button>
         </div>
     )
 }
