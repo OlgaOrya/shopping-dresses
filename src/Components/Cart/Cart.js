@@ -9,7 +9,6 @@ const Cart = () =>{
     const totalPrice = useSelector(getTotalPrice);
     const dispatch = useDispatch();
 
-
     return(
         <div>
             <h4>TOTAL PRICE: $ {totalPrice}</h4>

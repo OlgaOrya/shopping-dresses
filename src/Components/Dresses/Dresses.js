@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { getSelectedCategory } from '../../Redux/dressesSlice';
 
 
-const Dresses = ({differentDresses}) =>{
+const Dresses = () =>{
     const selectedCategory = useSelector(getSelectedCategory);
     return(
         <div className='containerdresses'>
