@@ -3,9 +3,6 @@ import { useDispatch } from "react-redux";
 import { addItemToCart } from "../../Redux/cartSlice";
 import Quantity from "../Cart/Quantity";
 
-
-
-
 const Dress = ({dress}) =>{
     const [quantity,setQuantity] = useState(1);
     const dispatch = useDispatch();

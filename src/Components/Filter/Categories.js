@@ -1,6 +1,7 @@
 import Filter from "./Filter";
 
-const Categories = () =>{
+
+const Categories = ({differentCategories}) =>{
 
     return(
         <div className="categories">

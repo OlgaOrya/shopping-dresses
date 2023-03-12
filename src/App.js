@@ -8,23 +8,30 @@ import {
 } from "react-router-dom";
 import About from './Components/About';
 import Contact from './Components/Contact';
-import Dresses from './Components/Dresses/Dresses';
-import Categories from './Components/Filter/Categories';
 import Cart from './Components/Cart/Cart';
+import Home from './Components/Home';
+import { useSelector } from 'react-redux';
+import { getCartItems } from './Redux/cartSlice';
+
 
 function App() {
+  const countCart = useSelector(getCartItems);
+  const sumCountCart = countCart.length;
+
   return (
     <div>
       <div className='menu'>
     <Router>
     <nav>
-        <Link className='link word' to = "/"><img className='logo' src = "https://ouch-cdn2.icons8.com/_n0c2LUxMKtXCzugm46OAHLgAsTTSWqi6YWK33dfKrA/rs:fit:256:337/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNDc0/L2QzZWQwZjFkLWEw/MmQtNDI2YS1iYzJl/LTQxYjUxNzY3MjIw/Zi5wbmc.png" alt ="logo"/></Link>
+        <Link className='link word' to = "/"><img className='logo' src = "https://ouch-cdn2.icons8.com/_n0c2LUxMKtXCzugm46OAHLgAsTTSWqi6YWK33dfKrA/rs:fit:256:337/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNDc0/L2QzZWQwZjFkLWEw/MmQtNDI2YS1iYzJl/LTQxYjUxNzY3MjIw/Zi5wbmc.png" alt ="logo"/>
+        <sapn>{sumCountCart}</sapn></Link>
         <Link className='link word' to = "/about">ABOUT</Link>
         <Link className='link word' to = "/contact">CONTACT</Link>
         <Link className='link' to = "/cart" target="_blank"><img className='iconCart' src ="https://img.icons8.com/carbon-copy/256/shopping-cart.png" alt = "iconCart" /></Link>
     </nav>
 
     <Routes>
+        <Route path = "/" element ={<Home />} />
         <Route path = "about" element ={<About />} />
         <Route path = "contact" element ={<Contact />} />
         <Route path = "cart" element ={<Cart />} />
@@ -32,10 +39,7 @@ function App() {
 </Router>
 </div>
 
-    <div className='container'>
-        <Categories />
-        <Dresses />
-      </div>
+
       </div>
   );
 }
