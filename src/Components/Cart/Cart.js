@@ -10,7 +10,7 @@ const Cart = () =>{
     const dispatch = useDispatch();
 
     return(
-        <div>
+        <div className="cart">
             <h4>TOTAL PRICE: $ {totalPrice}</h4>
             {cartItems.map(cartItem => <CartItem cartItem = {cartItem}/> )}
             <button className="btn deleteall" onClick={() =>dispatch(deleteAll([]))}>Delete all</button>

@@ -5,7 +5,7 @@ const Categories = () =>{
 
     return(
         <div className="categories">
-            {['CASUAL DRESSES','EVENING DRESSES','MAXI DRESSES','MINI DRESSES','WEDDING DRESSES','ALL']
+            {['CASUAL','EVENING','MAXI','MINI','WEDDING','ALL']
             .map(category => <Filter category ={category} />)}
         </div>
     )

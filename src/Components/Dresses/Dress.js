@@ -10,9 +10,9 @@ const Dress = ({dress}) =>{
     return(
             <div className="container">
             <div className="block">
-        <img src = {`./${dress.img}.jpg`} alt ="dresses" />
-        <h3>{dress.name}</h3>
-        <span>Price: $ {dress.price}</span>
+        <img className="pictureDresses" src = {`./${dress.img}.jpg`} alt ="dresses" />
+        <h3 className="itemCart">{dress.name}</h3>
+        <span className="itemCart">Price: $ {dress.price}</span>
         <Quantity quantity ={quantity} setQuantity ={setQuantity} />
         <button className="btn addItem" onClick={() => {dispatch (addItemToCart({dress,quantity}))}}>ADD TO CART</button>
         </div>

@@ -18,19 +18,14 @@ img {
     align-items: center;
     margin-left: 100px;
 }
-.menu{
-    background-color: #EAC7C7;
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px;
-}
 .link{
     text-decoration: none;
     padding: 15px 100px;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 .iconCart{
-    width: 60px;
-    margin-right: -100px;
+    width: 70px;
+    margin-right: -25px;
 }
 .word{
     font-size: 23px;
@@ -39,9 +34,10 @@ img {
 .categories{
     margin-left: 40px;
     color:#20262E;
-    font-size: 18px;
+    font-size: 25px;
     width: 200px;
     text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 .categorySelectedButton{
     background-color: #A0C3D2;
@@ -52,13 +48,14 @@ img {
 }
 .cartDelete{
     width: 28px;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 .containerdresses{
     display: flex;
     flex-wrap: wrap;
 }
 .logo{
-    width: 80px;
+    width: 60px;
 }
 .btn{
     border-radius: 5px;
@@ -70,10 +67,12 @@ img {
 .deleteall{
     margin-left: 40px;
     padding: 7px;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 .addItem{
     margin-top: 10px;
     padding: 5px;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 .button{
     margin-top: 8px;
@@ -81,7 +80,58 @@ img {
     background-color: #EAC7C7;
     font-size: 15px;
     color: #3C4048;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 h4{
     color: #3C4048;
+    font-family: 'Barlow Condensed', sans-serif;
 }
+.containerAll{
+    margin-top: 30px;
+    display: flex;
+}
+nav{
+    background-color: #EAC7C7;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 25px;
+}
+.cart{
+    margin-left: 60px;
+}
+.pictureDresses{
+    height: 300px;
+}
+.counterItems{
+    color: white;
+    background-color: red;
+    border-radius: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 15px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    color:#A0C3D2;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.imageMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -300px;
+}
+.imageHome{
+    width: 400px;
+}
+.itemCart{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
