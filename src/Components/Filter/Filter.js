@@ -2,8 +2,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { fileredCategory, getSelectedCategory } from "../../Redux/dressesSlice";
 
 const Filter = ({category}) =>{
-    const selectedCategory = useSelector(getSelectedCategory);
     const dispatch = useDispatch();
+    const selectedCategory = useSelector(getSelectedCategory);
 
     return(
         <div>

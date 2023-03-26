@@ -3,11 +3,11 @@ import {createSlice} from '@reduxjs/toolkit';
 export const dressesSlice = createSlice ({
     name: 'dresses',
     initialState:{
-        selectedCategory: 'CASUAL DRESSES'
+        selectedCategory: 'CASUAL'
     },
 
     reducers:{
-    fileredCategory:(state,action)=>{
+        fileredCategory:(state,action)=>{
         state.selectedCategory=action.payload
     }
     }

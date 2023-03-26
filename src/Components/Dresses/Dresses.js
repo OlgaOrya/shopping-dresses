@@ -13,9 +13,13 @@ const Dresses = () =>{
             if (selectedCategory==='ALL') return true;
         return selectedCategory===dress.category;
         })
-        .map(dress => <Dress dress = {dress} />)}
+        .map(dress => <Dress key={dress.id} dress = {dress} />)}
         </div>
     )
 }
 
 export default Dresses;
+
+
+
+

@@ -11,8 +11,8 @@ function Home(){
         <h1>What's your dress for today?</h1>
     </div>
     <div className='containerAll'>
-    <Categories differentCategories = {Categories}/>
-    <Dresses differentDresses = {Dresses} />
+    <Categories />
+    <Dresses  />
     </div>
 </div>
     )
